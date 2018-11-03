@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background: dodgerblue;
+    height: 100px;
+}
+.ancho{
+    width: 95%;
+    height: 100px;
+    background: dodgerblue;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 100px;
+    background: dodgerblue;
+    float: left;
+    box-sizing: border-box;
+}
+.logo p a{
+    padding-top: 10Px;
+    
+}
+nav{
+    width: 70%;
+    height: 100%;
+    background: dodgerblue;
+    float: left;
+    text-align: right;
+    padding-top:24px; 
+    box-sizing: border-box;
+    
+}
+nav img{
+    display: inline;
+    
+}
+nav a{
+    padding-left: 5px; 
+}
+nav p.texo{
+    font-size: 1.2em;
+    text-align: center;
+}
+div.contenedor{
+    width: 200px;
+    height: 230px;
+    float: right;
+    
+}
+div#uno{
+    width: 10%;
+    height: 36px;
+    background-color: dodgerblue;
+
+    
+}
+div#dos{
+        width: 10%;
+    height: 36px;
+    background-color: dodgerblue;
+}
+div#tres{
+        width: 10%;
+    height: 36px;
+    background-color: dodgerblue;
+}

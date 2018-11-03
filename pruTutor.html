@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PruebaTutor</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Img/icono.png" rel="shortcut icon">
+        <link rel="stylesheet" href="estiloEnc.css">
+        <script>
+
+            <!--
+                alert("Prueba del tutor  \n\nEn esta prueba habra 10 preguntas, en donde pondras aprueba tus conocimientos al intentar seleccionar la respuesta correcta  "+
+                " \n\n1. Al responder bien una pregunta te saldra un mensaje diciendo cuantos puntos tienes ."+
+                "\n\n2. Al termino del la prueba le tienes que dar click al boton donde dice calificar para saber si aprobo o reprobo la prueba.") 
+            //-->
+            //mis variabres a autilizar
+            var resp = new Array;
+            var faite = new Array;
+            var score = 0;
+            //las respuestas del examen
+            resp[1] = "a";
+            resp[2] = "b";
+            resp[3] = "c";
+            resp[4] = "a";
+            resp[5] = "b";
+            resp[6] = "c";
+            resp[7] = "a";
+            resp[8] = "b";
+            resp[9] = "c";  
+            resp[10] = "a";
+            //funciones
+            function Engine(question, repose){
+                if (repose != resp[question]){
+                    if (!faite[question]){ 
+                        faite[question] = -1;}
+                    }else{
+                        if (!faite[question]){
+                            faite[question] = -1;
+                            score++;
+                            alert("¡Correcto! llevas  : "  + score  );
+                        }
+                    }
+                }
+            //funcion de nivel
+            function Nivel (){
+                if (score >=8  && score <= 10) {
+                    alert(score + "/10 " + "Prueba superada, tienes acceso como tutor");
+                }
+                if (score >= 3 && score <= 7) {
+                    alert(score + "/10 " + "Prueba no superada, no tienes acceso como tutor");
+                }
+                if (score <= 2) {
+                    alert("Su puntuación es: "+ score 
+			+"\nLa puntuación máxima que podía obtener es 10" 
+			+"\nTiene que revisar nuevamente sus lecciones" 
+			+"\nSu porcentaje de aciertos es menos del 10%");
+                }
+            }   
+        </script>
+        <style>
+            button{
+                background: limegreen;
+                text-align: center;
+                color: snow;  
+            } 
+ form .btn{ 
+  position: relative;
+  top: 0;	
+  border: none; 
+  width: 134px; 
+  height: 31px; 
+  font-weight: bold;
+  color: #fff;
+  text-shadow:0 -1px 0 #000; 
+  border-radius: 3px; 
+  box-shadow: 0 -1px 0 limegreen,0 1px 0 limegreen; 
+  background: -webkit-linear-gradient(top, limegreen,limegreen); 
+  background: -moz-linear-gradient(top,limegreen,limegreen); 
+  background: -o-linear-gradient(top,limegreen,limegreen); 
+  background: -ms-linear-gradient(top,limegreen,limegreen); 
+  background: linear-gradient(top,limegreen,limegreen); 
+ 
+  -webkit-transition: all 0.25s ease-out 0.05s;
+  -moz-transition: all 0.25s ease-out 0.05s;
+  -o-transition: all 0.25s ease-out 0.05s;
+  -ms-transition: all 0.25s ease-out 0.05s;
+  transition: all 0.25s ease-out 0.05s;
+}
+form .btn:hover{
+  top: 1px;
+  box-shadow: 0 3px 0 0 greenyellow,0 0 0 3px greenyellow,0 3px 0 0 greenyellow,3px 0 0 0 greenyellow; 
+  background: -webkit-linear-gradient(top,dodgerblue,#e1b2ac); 	
+  background: -moz-linear-gradient(top,dodgerblue,#e1b2ac); 	
+  background: -o-linear-gradient(top,dodgerblue,#e1b2ac); 	
+  background: -ms-linear-gradient(top,dodgerblue,#e1b2ac); 	
+  background: linear-gradient(top,dodgerblue,#e1b2ac); 	
+}
+.btn{
+    text-align: center;
+}
+        </style>
+    </head>
+    <body>
+                <header>
+            <div class="ancho">
+                <div class="logo">
+                    <p><img src="Img/received_311741786320757.png" width="210" height="97"></p>
+                </div>
+                <nav>
+                    <div class="contenedor" id="uno">
+                        <a href=""><img src="Img/maxcdn-website-logo.png" width="41" height="36" style=""></a>
+                        <p class="texto">Nosotros</p>
+                    </div>
+                    <div class="contenedor" id="dos">
+                        <a href=""><img src="Img/settings.png" width="41" height="36" ></a>
+                        <p class="texto">Servicios</p>
+                    </div>
+                    <div class="contenedor" id="tres">
+                        <a href=""><img src="Img/home.png" width="41" height="36"></a>
+                        <p class="texto">Inicio</p>
+                    </div>
+                </nav>
+            </div>
+            
+        </header>
+        <table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+            <tr> 
+                <td width="70" rowspan="2"></td>
+                <td width="915" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color=""><b><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPRUEBA PARA TUTOR </b></font></td>
+            </tr>
+            <tr> 
+                <td width="915" bgcolor="#336699"></td>
+            </tr>
+            <tr bgcolor="#FFFFFF"> 
+                <td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">  </font></td>
+            </tr>
+            <tr> 
+                <td height="521"> </td>
+                <td height="521"> 
+                    <div align="center">
+                        <div  style="margin-left: -60%;">
+                            <FORM NAME="formulario" ACTION="login.html">
+                                <BR>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Pregunta 1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                <input name=1 onClick="Engine(1, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=1 onClick="Engine(1, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=1 onClick="Engine(1, this.value)" type=radio value=c> c. Opcion 3</font></p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                <input name=2 onClick="Engine(2, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                <input name=2 onClick="Engine(2, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=2 onClick="Engine(2, this.value)" type=radio value=c> c. opcion3</font></p>
+                                <p> </p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 3</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=3 onClick="Engine(3, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=3 onClick="Engine(3, this.value)" type=radio value=b> b.  Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=3 onClick="Engine(3, this.value)" type=radio value=c> c.  Opcion3</font></p>
+                                <p> </p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 4</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=4 onClick="Engine(4, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=4 onClick="Engine(4, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=4 onClick="Engine(4, this.value)" type=radio value=c> c. opcion3</font></p>
+                                <p> </p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 5</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=5 onClick="Engine(5, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=5 onClick="Engine(5, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=5 onClick="Engine(5, this.value)" type=radio value=c> c. Opcion3</font></p>
+                                <p></p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 6</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=6 onClick="Engine(6, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=6 onClick="Engine(6, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=6 onClick="Engine(6, this.value)" type=radio value=c> c. Opcion3</font></p>
+                                <p></p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 7</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=7 onClick="Engine(7, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=7 onClick="Engine(7, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=7 onClick="Engine(7, this.value)" type=radio value=c> c. Opcion3</font></p>
+                                <p></p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 8</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=8 onClick="Engine(8, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=8 onClick="Engine(8, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=8 onClick="Engine(8, this.value)" type=radio value=c> c. Opcion3</font></p>
+                                <p></p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 9</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=9 onClick="Engine(9, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=9 onClick="Engine(9, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=9 onClick="Engine(9, this.value)" type=radio value=c> c. Opcion3</font></p>
+                                <p></p>
+                                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>Pregunta 10</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=10 onClick="Engine(10, this.value)" type=radio value=a> a. Opcion1</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=10 onClick="Engine(10, this.value)" type=radio value=b> b. Opcion2</font></p>
+                                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                                <input name=10 onClick="Engine(10, this.value)" type=radio value=c> c. Opcion3</font></p>
+                                <p></p><br>
+                                <div style="margin-left: 80%;">
+                                    <input type="submit" value="Calificar" class="btn" name="Resulta" onClick=Nivel()><br><br>
+                                </div>
+                            </FORM>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html> 

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link href="Img/icono.png" rel="shortcut icon">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                width: 104.8%;
+                background: dodgerblue;
+                height: 100px;
+                margin-top: -2.5%;
+                margin-left: -2.5%;
+
+            }
+            .ancho{
+                width: 95%;
+                height: 100px;
+                background: dodgerblue;
+                margin:auto;
+
+            }
+            .logo{
+                width: 30%;
+                height: 100px;
+                background: dodgerblue;
+                float: left;
+                box-sizing: border-box;
+
+            }
+            .logo p a{
+                padding-top: 10Px;
+
+            }
+            nav{
+                width: 70%;
+                height: 100%;
+                background: dodgerblue;
+                float: left;
+                text-align: right;
+                padding-top:24px; 
+                box-sizing: border-box;
+
+            }
+            nav img{
+                display: inline;
+
+            }
+            nav a{
+                padding-left: 5px; 
+            }
+            nav p.texo{
+                font-size: 1.2em;
+                text-align: center;
+            }
+            div.contenedor{
+                width: 200px;
+                height: 230px;
+                float: right;
+
+            }
+            div#uno{
+                width: 10%;
+                height: 36px;
+                background-color: dodgerblue;
+
+
+            }
+            div#dos{
+                width: 10%;
+                height: 36px;
+                background-color: dodgerblue;
+            }
+            div#tres{
+                width: 10%;
+                height: 36px;
+                background-color: dodgerblue;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                //variables
+                var usu = document.getElementById("usu");
+                //escuchador de eventos
+                usu.addEventListener("keypress", soloLetras, false);
+                //funcion de solo letras
+                function soloLetras(e) {
+                    var key = window.event ? e.which : e.keyCode;
+                    if ((key < 65 || key > 90) && (key < 97 || key > 122) && (key = 239))
+                        e.preventDefault();
+                }//cierre de soloLetras
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="ancho">
+                <div class="logo">
+                    <p><img src="Img/received_311741786320757.png" width="210" height="97"></p>
+                </div>
+                <nav>
+                    <div class="contenedor" id="uno">
+                        <a href=""><img src="Img/maxcdn-website-logo.png" width="41" height="36" style=""></a>
+                        <p class="texto">Nosotros</p>
+                    </div>
+                    <div class="contenedor" id="dos">
+                        <a href=""><img src="Img/settings.png" width="41" height="36" ></a>
+                        <p class="texto">Servicios</p>
+                    </div>
+                    <div class="contenedor" id="tres">
+                        <a href=""><img src="Img/home.png" width="41" height="36"></a>
+                        <p class="texto">Inicio</p>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+        <div class="box">
+            <form action="escritorio.html">
+                <div class="tag">INICIAR SESION</div>
+                <div>Ingrese su nombre y contraseña para iniciar sesión</div>
+                <div>
+                    <input type="text" id="usu"  placeholder="Usuario:" required>
+                </div>
+                <div>
+                    <input type="password" id="con"  placeholder="Contraseña:" required>
+                </div>
+                <div>
+                    <input type="submit" class="btn" value="Entrar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
